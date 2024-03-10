@@ -1,0 +1,127 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  z-index: 10;
+}
+
+.nav-brand {
+  width: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand span {
+  margin-left: 1rem;
+  color: rgb(255, 233, 189);
+}
+
+.icon-toggle {
+  width: 100%;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.toggle-button {
+  transition: all 300ms ease-in-out;
+  z-index: 11;
+  color: wheat;
+}
+
+.navbar-collapse {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  background-color: rgb(78 33 13);
+  height: 100vh;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 1rem 0 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.show-navbar {
+  transform: translateX(280px);
+}
+
+.nav-item {
+  margin-bottom: 1.4rem;
+}
+
+.nav-link {
+  transition: all 0.3s ease-in-out;
+  color: rgb(255, 233, 189);
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(202, 142, 13);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: rgb(255, 208, 0);
+  font-weight: bolder !important;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-collapse {
+    position: relative;
+    height: auto;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    transform: translateX(0);
+    justify-content: flex-end;
+    margin-right: 30px;
+    flex-direction: row;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .nav-tabs {
+    padding: 0;
+  }
+
+  .nav-item {
+    margin-bottom: 0;
+    margin-left: 2.8rem;
+  }
+
+  .nav-link {
+    color: rgb(255, 233, 189);
+    font-weight: bolder;
+    font-size: 2.4rem;
+    font-weight: 500 !important;
+    opacity: 0.8;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+}

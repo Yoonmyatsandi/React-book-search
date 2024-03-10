@@ -1,0 +1,101 @@
+.book-details {
+  padding: 6rem 0;
+  background: linear-gradient(
+      rgba(54, 32, 4, 0.611),
+      rgba(28, 16, 1, 0.774),
+      rgba(19, 11, 3, 0.537)
+    ),
+    url("../../img/cover3.jpg") center/cover no-repeat;
+  background-color: #1e1e1e;
+  background-size: cover;
+  object-fit: fill;
+  background-position: center;
+  height: 100vh;
+}
+
+.backward-btn {
+  margin-left: 20px;
+  margin-bottom: 2.6rem;
+  transition: all 300ms ease-in-out;
+  color: wheat;
+}
+
+.backward-btn:hover {
+  color: rgb(204, 163, 87);
+}
+
+.backward-btn span {
+  margin-left: 1rem;
+}
+
+.book-details-container {
+  gap: 4rem;
+}
+
+.details-img {
+  max-width: 470px;
+  max-height: 470px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.details-img:hover {
+  transform: perspective(1000px) rotateY(10deg);
+  box-shadow: rgba(204, 163, 87, 0.722) 0px 5px 10px 5px;
+}
+
+.details-img img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.details-item {
+  margin-bottom: 1.4rem;
+  color: rgb(204, 163, 87);
+  font-family: sans-serif;
+}
+
+.details-item.description {
+  opacity: 0.9;
+}
+
+.book-details-about {
+  overflow-y: scroll;
+  max-height: 380px;
+  padding: 2rem;
+  letter-spacing: 1px;
+  background-color: rgb(72, 41, 11);
+}
+
+.book-details-about::-webkit-scrollbar {
+  width: 8px;
+}
+
+.book-details-about::-webkit-scrollbar-track {
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.book-details-about::-webkit-scrollbar-thumb {
+  background-color: rgb(48, 34, 8);
+  outline: -1px solid rgb(48, 34, 8);
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .book-details-container {
+    grid-template-columns: 40% 60%;
+    gap: 0;
+  }
+
+  .details-img {
+    padding: 0 6rem 0 2rem;
+  }
+
+  .details-img img {
+    max-width: 45%;
+  }
+}

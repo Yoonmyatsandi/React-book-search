@@ -1,0 +1,42 @@
+.search-bar {
+    width: 100%;
+    max-width: 680px;
+    margin-top: 30px;
+}
+
+.searchbar-ele {
+    padding: 1rem 2.8rem;
+    border-radius: 2rem;
+}
+
+.searchbar-ele .form-control {
+    font-size: 2rem;
+    padding: 0.6rem;
+    width: 100%;
+}
+
+.searchbar-ele .form-control::placeholder {
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 768px) {
+    .searchbar-ele {
+        padding: 1rem;
+    }
+
+    .searchbar-ele .form-control {
+        font-size: 1.6rem;
+        padding: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .searchbar-ele {
+        padding: 0.8rem;
+    }
+
+    .searchbar-ele .form-control {
+        font-size: 1.4rem;
+        padding: 0.3rem;
+    }
+}

@@ -1,0 +1,78 @@
+.header-content {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(94, 29, 8, 0.3),
+      rgba(46, 18, 3, 0.64),
+      rgba(6, 74, 16, 0.1)
+    ),
+    url("../../img/cover10.jpg") center/cover no-repeat;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 4.2rem;
+}
+
+.header-text {
+  font-size: 2.2rem;
+  margin-bottom: 2.8rem;
+  opacity: 1;
+  max-width: 650px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+  padding: 5px 5px;
+  color: #ffffff;
+  transform: scale(1.2);
+  border-radius: 50%;
+  background-color: #ff871d;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .header-text {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 300px;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}

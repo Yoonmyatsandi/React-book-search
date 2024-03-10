@@ -1,0 +1,98 @@
+.sec-header-content {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(94, 29, 8, 0.3),
+      rgba(46, 18, 3, 0.64),
+      rgba(6, 74, 16, 0.1)
+    ),
+    url("../../img/cover3.jpg") center/cover no-repeat;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.sec-header-title {
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+.sec-header-text {
+  font-size: 2.2rem;
+  margin-bottom: 2.8rem;
+  opacity: 1;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .sec-header-title {
+    font-size: 3rem;
+  }
+
+  .sec-header-text {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sec-header-title {
+    font-size: 2.5rem;
+  }
+
+  .sec-header-text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.contact-form-sec {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group-sec {
+  margin-bottom: 20px;
+}
+
+.label-sec {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.input-sec,
+.textarea-sec {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.textarea-sec {
+  resize: vertical;
+}
+
+.button-sec {
+  background-color: #c3610b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.button-sec:hover {
+  background-color: #e57217;
+}

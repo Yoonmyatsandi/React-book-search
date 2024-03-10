@@ -1,0 +1,43 @@
+.about-container{
+    gap: 4rem;
+    color: rgb(204, 163, 87);
+}
+
+.about-tit{
+    margin: 1rem 0;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  .about-image img {
+    max-width: 100%;
+  }
+  
+.about-image img{
+    max-width: 520px;
+}
+
+.about-text p{
+    margin: 1.8rem 0;
+    opacity: 0.8;
+}
+
+@media screen and (min-width:800px) {
+    .about-container{
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 55px;
+    }
+
+    .about-tit{
+        margin-top: 0;
+    }
+
+    .about-image img{
+        margin-left: 0;
+    }
+}
